@@ -1,0 +1,135 @@
+* {
+    font-family: Helvetica, Arial, sans-serif
+}
+
+h1,
+h6 {
+    margin: 0;
+}
+
+body {
+    background-color: #f0f2f5;
+    padding: 0 16px;
+}
+
+.div__login_screen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.div__brand_text {
+    margin: auto 0;
+}
+
+.h1__brand_name {
+    font-family: 'SFProDisplay-Regular', Helvetica, Arial, sans-serif;
+    color: #1877f2;
+    font-weight: 900;
+    font-size: 4em;
+}
+
+.h5__brand_tagline {
+    margin-top: 8px;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-right: 128px;
+}
+
+.div__input_box {
+    text-align: center;
+    background-color: white;
+    width: 20%;
+    padding: 24px 16px;
+    border-radius: 8px;
+    height: fit-content;
+    margin: auto 0;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+.form__login {
+    height: 100%;
+    width: 100%;
+}
+
+.hr__login {
+    opacity: 0.3;
+}
+
+.form__item {
+    width: 90%;
+    padding: 16px 16px;
+    border-radius: 6px;
+}
+
+.form__input {
+    margin: 8px 0;
+    font-size: 1.01em;
+    border: 2px solid #edeeef;
+
+}
+
+.form__input::placeholder {
+    opacity: 0.7;
+}
+
+.form__input:focus {
+    outline-color: #1877f2;
+}
+
+.form__button {
+    width: 100%;
+    margin: 8px 0px;
+    font-style: bold;
+    font-weight: 600;
+    font-size: 1em;
+    border: 0;
+    color: #edeeef;
+}
+
+.form__button--login {
+    background-color: #1877f2;
+}
+
+.form__button--login:hover {
+    background-color: #1876f2c9;
+    box-shadow: 0 2px 4px #1877f240, 0 8px 16px #1877f240;
+}
+
+.form__button--forgot {
+    background-color: white;
+    color: #1877f2;
+    font-size: 0.9em;
+}
+
+.form__button--forgot:hover {
+    background-color: #f0f0f1;
+}
+
+.form__button--create_new {
+    margin-top: 16px;
+    width: fit-content;
+    padding: 16px 32px;
+    background-color: #42b72a;
+}
+
+.form__button--create_new:hover {
+    background-color: #6cb85d;
+    box-shadow: 0 2px 4px #42b72a40, 0 8px 16px #42b72a40;
+
+}
+
+@media only screen and (max-width: 320px) {
+    .div__login_screen {
+        flex-direction: column;
+    }
+}
+
+
+@media only screen and (max-width: 720px) {
+    .div__input_box{
+        width: 50%;
+    }
+}
