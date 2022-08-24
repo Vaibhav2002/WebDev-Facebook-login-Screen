@@ -16,7 +16,7 @@ body {
     width: 100vw;
     height: 100vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -121,15 +121,8 @@ body {
 
 }
 
-@media only screen and (max-width: 320px) {
-    .div__login_screen {
-        flex-direction: column;
-    }
-}
-
-
-@media only screen and (max-width: 720px) {
-    .div__input_box{
-        width: 50%;
+@media only screen and (min-width: 480px) {
+    .div__login_screen{
+        flex-direction: row;
     }
 }
